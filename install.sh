@@ -20,4 +20,8 @@ sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/privat
 sudo postconf -e "smtpd_tls_cert_file=/etc/ssl/certs/postfix-selfsigned.crt"
 sudo postconf -e "smtpd_tls_key_file=/etc/ssl/private/postfix-selfsigned.key"
 
+# Create user
+echo $suffix Creating user "incoming"...
+sudo useradd incoming
+
 echo $suffix Done!
