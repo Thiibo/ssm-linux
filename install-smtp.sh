@@ -1,3 +1,5 @@
+#!/bin/bash
+
 suffix="[SMTP Install]"
 
 # Install packages
