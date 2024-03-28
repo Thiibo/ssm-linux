@@ -24,4 +24,11 @@ sudo postconf -e "smtpd_tls_key_file=/etc/ssl/private/postfix-selfsigned.key"
 echo $suffix Creating user "incoming"...
 sudo useradd incoming
 
+# Add permissions to files in scripts directory
+for file in $(pwd)/scripts/*.sh
+do
+  chmod +x $file
+done
+
+
 echo $suffix Done!
