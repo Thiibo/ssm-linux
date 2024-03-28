@@ -14,7 +14,7 @@ sudo postconf -e "myhostname=$(hostname).localdomain"
 
 # Configure loopback-only
 echo $suffix Configuring loopback-only...
-sudo postconf -e "inet-interfaces=loopback-only"
+sudo postconf -e "inet_interfaces=loopback-only"
 
 # Encryption settings
 echo $suffix Generating certificate...
