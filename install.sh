@@ -31,5 +31,7 @@ do
   chmod +x $file
 done
 
+# Set up start up script
+(crontab -l ; echo "@reboot $(pwd)/scripts/startup.sh") | crontab -
 
 echo $suffix Done!
