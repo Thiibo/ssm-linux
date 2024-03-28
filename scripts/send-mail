@@ -35,4 +35,5 @@ for ((i = 0; i < ${#smtp_servers[@]}; i++)); do
 done
 
 # If all servers fail, log the failure
-echo "Failed to send email through all SMTP servers." >> /path/to/log/file.log
+echo "Failed to send email through all SMTP servers." >> /var/log/send_mail_errors.log
+
