@@ -1,6 +1,6 @@
 #!/bin/bash
 
-suffix="[SMTP Install]"
+suffix="[Monitor Server Install]"
 
 # Install SMTP
 echo $suffix Installing SMTP
