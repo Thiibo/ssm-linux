@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_FILE="${$1:='/var/log/auth.log'}" # Use first parameter as value, otherwise default to value
+LOG_FILE="/var/log/auth.log" # Use first parameter as value, otherwise default to value
 EMAIL="incoming@localhost"
 SUBJECT="SSH Login Alert"
 
