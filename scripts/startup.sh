@@ -3,8 +3,8 @@
 # Do stuff
 echo [$(date)] [$(whoami)@$(hostname)] Server started. >> ~/server.log
 
-./watch-shadow-file.sh &
-./watch-ssh.sh &
+sudo ./watch-shadow-file.sh &
+sudo ./watch-ssh.sh &
 
 # Send mail
 recipient="incoming@localhost"
