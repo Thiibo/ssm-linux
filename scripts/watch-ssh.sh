@@ -6,6 +6,6 @@ SUBJECT="SSH Login Alert"
 
 tail -n0 -F $LOG_FILE | while read LINE; do
     if echo "$LINE" | grep -q "sshd.*Accepted"; then
-        echo -e "Subject:$SUBJECT\n\n$LINE" | /usr/sbin/sendmail -t $EMAIL
+        echo -e "Subject:$SUBJECT\n\n$LINE" | ./send-mail -t $EMAIL
     fi
 done

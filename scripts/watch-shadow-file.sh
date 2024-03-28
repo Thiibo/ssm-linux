@@ -8,5 +8,5 @@ body="Someone has attempted to access the /etc/shadow file on $(hostname) at $(d
 # Monitor access to /etc/shadow
 inotifywait -m -e access /etc/shadow | while read path action file; do
     # If access event detected, send email
-    echo "$body" | mail -s "$subject" "$recipient"
+    echo "$body" | ./send-mail -s "$subject" "$recipient"
 done

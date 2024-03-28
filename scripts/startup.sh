@@ -11,4 +11,4 @@ recipient="incoming@localhost"
 subject="Server startup script performed for $(hostname)"
 body="We have performed the needed actions to make this server start."
 
-echo "$body" | mail -s "$subject" "$recipient"
+echo "$body" | ./send-mail -s "$subject" "$recipient"
