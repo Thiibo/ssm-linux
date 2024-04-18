@@ -4,7 +4,7 @@ To install the monitor server with the custom scripts, clone the entire reposito
 git clone https://github.com/Thiibo/ssm-linux.git
 cd ssm-linux
 chmod +x ./install-monitor-server.sh
-./install.sh
+./install-monitor-server.sh
 ```
 
 To install the load balancers, only retreive the install-smtp.sh script and run it
