@@ -2,6 +2,11 @@
 
 suffix="[Monitor Server Install]"
 
+# Install packages
+echo $suffix Installing crontab
+sudo apt install cron
+sudo systemctl enable cron
+
 # Install SMTP
 echo $suffix Installing SMTP
 chmod +x ./install-smtp.sh
